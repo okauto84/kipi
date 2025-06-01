@@ -89,8 +89,8 @@ with st.sidebar:
     with st.expander("📄 라이센스", expanded=False):
         st.write("MIT License")
 
-    # with st.expander("📊 표시설정", expanded=False):
-    #     show_stats = st.checkbox("통계 표시", value=False)
+    with st.expander("📊 표시설정", expanded=False):
+        show_stats = st.checkbox("통계 표시", value=False)
 
 
 # 메인 화면
