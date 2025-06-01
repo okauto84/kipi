@@ -34,7 +34,7 @@ st.set_page_config(
     layout="wide"
 )
 
-API_KEY = "AIzaSyDmFndkV2jBLq0UjeSFkkUX4_CXh5H_860"
+API_KEY = st.secrets["google_api_key"]
 
 # 사이드바 설정
 with st.sidebar:
