@@ -7,9 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1nBTaGUGXQCr0AhU1_jNJ_2Sp5RAEto2S
 """
 
-! pip install -q -U google-genai
+# ! pip install -q -U google-genai
 
-! pip install streamlit requests
+# ! pip install streamlit requests
 
 # API_KEY = 'AIzaSyDmFndkV2jBLq0UjeSFkkUX4_CXh5H_860'
 
