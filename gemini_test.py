@@ -34,7 +34,7 @@ st.set_page_config(
     layout="wide"
 )
 
-API_KEY = "AIzaSyDmFndkV2jBLq0UjeSFkkUX4_CXh5H_860"  # 실제 Gemini API 키로 교체하세요
+API_KEY = "AIzaSyDmFndkV2jBLq0UjeSFkkUX4_CXh5H_860"
 
 # 사이드바 설정
 with st.sidebar:
@@ -56,7 +56,6 @@ with st.sidebar:
         st.write("챗봇 인터페이스")
 
     with st.expander("📍 출력방법", expanded=False):
-        show_stats = st.checkbox("통계 표시", value=False)
         output_method = st.selectbox(
             "출력 방식 선택",
             ["실시간 출력", "일괄 출력"],
