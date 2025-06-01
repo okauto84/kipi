@@ -8,15 +8,10 @@ Original file is located at
 """
 
 # ! pip install -q -U google-genai
-
 # ! pip install streamlit requests
-
 # API_KEY = 'AIzaSyDmFndkV2jBLq0UjeSFkkUX4_CXh5H_860'
-
 # from google import genai
-
 # client = genai.Client(api_key=API_KEY)
-
 # response = client.models.generate_content(
 #     model="gemini-2.0-flash",
 #     contents="""
@@ -34,17 +29,16 @@ import time
 
 # 페이지 설정
 st.set_page_config(
-    page_title="Won-Q",
+    page_title="kipi-test",
     page_icon="🔍",
     layout="wide"
 )
 
-# API 키 설정 (환경변수나 secrets로 관리하는 것을 권장)
 API_KEY = "AIzaSyDmFndkV2jBLq0UjeSFkkUX4_CXh5H_860"  # 실제 Gemini API 키로 교체하세요
 
 # 사이드바 설정
 with st.sidebar:
-    st.markdown("### 🔍 Won-Q")
+    st.markdown("### 🔍 kipi-test")
 
     # API 키 입력 (선택사항)
     api_key_input = st.text_input(
@@ -59,16 +53,17 @@ with st.sidebar:
 
     # 각종 설정 옵션들
     with st.expander("📁 개요", expanded=False):
-        st.write("Won-Q 챗봇 인터페이스 (Powered by Gemini)")
+        st.write("챗봇 인터페이스")
 
     with st.expander("📍 출력방법", expanded=False):
+        show_stats = st.checkbox("통계 표시", value=False)
         output_method = st.selectbox(
             "출력 방식 선택",
             ["실시간 출력", "일괄 출력"],
             index=0
         )
 
-    with st.expander("🎯 제작방법", expanded=False):
+    with st.expander("🎯 출력설정", expanded=False):
         temperature = st.slider(
             "창의성 수준 (Temperature)",
             min_value=0.0,
@@ -95,27 +90,12 @@ with st.sidebar:
     with st.expander("📄 라이센스", expanded=False):
         st.write("MIT License")
 
-    with st.expander("📊 차트", expanded=False):
-        show_stats = st.checkbox("통계 표시", value=False)
+    # with st.expander("📊 표시설정", expanded=False):
+    #     show_stats = st.checkbox("통계 표시", value=False)
 
-    with st.expander("📄 원규 PDF Preview", expanded=False):
-        st.write("PDF 미리보기 기능")
-
-    with st.expander("⚠️ 사용후기", expanded=True):
-        user_feedback = st.text_area(
-            "사용 후기 남기기",
-            placeholder="여기에 후기를 입력하세요...",
-            height=100
-        )
-
-        if st.button("후기 제출"):
-            if user_feedback:
-                st.success("후기가 제출되었습니다!")
-            else:
-                st.warning("후기를 입력해주세요.")
 
 # 메인 화면
-st.markdown("# Won-Q")
+st.markdown("# 민재옥 테스트")
 st.markdown("*Powered by Google Gemini*")
 
 # 세션 상태 초기화
