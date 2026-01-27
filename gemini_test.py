@@ -8,7 +8,7 @@
 # response = client.models.generate_content(
 #     model="gemini-2.0-flash",
 #     contents="""
-#         한국특허정보원 민재옥에 대해서 설명해줘
+#         지식재산처장님의 카이로로 3박4일 숙박비를 계산해줘
 #     """,
 # )
 
