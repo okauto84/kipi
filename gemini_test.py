@@ -8,7 +8,7 @@
 # response = client.models.generate_content(
 #     model="gemini-2.0-flash",
 #     contents="""
-#         지식재산처장님의 카이로로 3박4일 숙박비를 계산해줘
+#         지식재산처장님의 카이로로 가는 해외출장 3박4일 숙박비를 계산해줘
 #     """,
 # )
 
