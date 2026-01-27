@@ -31,7 +31,7 @@ API_KEY = st.secrets["google_api_key"]
 
 # 사이드바 설정
 with st.sidebar:
-    st.markdown("### 🔍 kipi-test")
+    st.markdown("### 🔍 Rules")
 
     # API 키 입력 (선택사항)
     api_key_input = st.text_input(
@@ -75,7 +75,7 @@ with st.sidebar:
     with st.expander("💭 알고리즘", expanded=False):
         model_name = st.selectbox(
             "모델 선택",
-            ["gemini-2.0-flash"],
+            ["gemini-3-flash-preview"],
             index=0
         )
 
