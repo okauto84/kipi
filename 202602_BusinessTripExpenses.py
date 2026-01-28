@@ -79,7 +79,7 @@ with st.sidebar:
 
 
 # 메인 화면
-st.markdown("# okauto 테스트 화면")
+st.markdown("# 여비규정 ")
 st.markdown("*Powered by Google Gemini*")
 
 # 세션 상태 초기화
