@@ -75,7 +75,7 @@ with st.sidebar:
     with st.expander("💭 알고리즘", expanded=False):
         model_name = st.selectbox(
             "모델 선택",
-            ["gemini-3-flash-preview"],
+            ["gemini-2.5-flash"],
             index=0
         )
 
